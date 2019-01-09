@@ -7,24 +7,14 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/user")
-public class UserController {
+public class PatientController {
 
     @PostMapping("/signin")
-    publc int signin(){
+    publc int addADasicInfo(){
 
         return 0;
     }
 
-    @PostMapping("/signup")
-    public int signup(){
-
-       return 1;
-    }
-
-    @GetMapping("/profile")
-    public int getUser(){
-
-        return 2;
-    }
+   
 
 }
