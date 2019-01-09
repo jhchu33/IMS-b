@@ -12,11 +12,13 @@ public class UserController {
     @PostMapping("/signin")
     publc int signin(){
 
+        
     }
 
     @PostMapping("/signup")
     public int signup(){
 
+       return 1;
     }
 
     @GetMapping("/profile")
