@@ -12,19 +12,19 @@ public class UserController {
     @PostMapping("/signin")
     publc int signin(){
 
-        return 0;
+        return 4;
     }
 
     @PostMapping("/signup")
     public int signup(){
 
-       return 1;
+       return 5;
     }
 
     @GetMapping("/profile")
     public int getUser(){
 
-        return 2;
+        return 6;
     }
 
 }
