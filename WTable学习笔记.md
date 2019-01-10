@@ -2,11 +2,11 @@
 
 WTable是58架构平台部研发的kv、klist分布式存储系统，数据会存储在集群内部的各个节点上，具有高可用、高性能、存储容量大、自动扩容和容灾等特点。相对于其它存在方案有较大的优势，如下图所示。
 
-![](/Users/zujiahuan/Desktop/屏幕快照 2019-01-10 上午10.43.59.png)
+![](https://ws1.sinaimg.cn/large/006tNc79gy1fz1lqlphu5j313809ctbe.jpg)
 
 表的结构示例，如下图所示。
 
-![](/Users/zujiahuan/Desktop/屏幕快照 2019-01-10 下午12.07.51.png)
+![](https://ws4.sinaimg.cn/large/006tNc79gy1fz1lsbrcncj31cs0g640t.jpg)
 
 关于WTable表结构几个要点：
 
@@ -22,7 +22,7 @@ WTable是58架构平台部研发的kv、klist分布式存储系统，数据会�
 **2 原理**
 
 原理没有搞得太明白，贴一张文档上的图。
-![](/Users/zujiahuan/Desktop/屏幕快照 2019-01-10 下午3.30.25.png)
+![](https://ws3.sinaimg.cn/large/006tNc79gy1fz1ltzprsmj30w00eo78l.jpg)
 直接COPY，解释一下：
 
 **Name Center：**提供一种“类似域名解析”的服务。Name Center会实时从etcd同步所有小集群Proxy服务器地址信息，剔除有问题的Proxy，并提供接口根据bid拉取Proxy地址列表。
@@ -48,7 +48,7 @@ WTable是58架构平台部研发的kv、klist分布式存储系统，数据会�
     
 首先指正example里的一个小坑，wtable.properties中的信息有误，需要改成如下图。
 
-![](/Users/zujiahuan/Desktop/屏幕快照 2019-01-10 下午3.20.40.png)
+![](https://ws1.sinaimg.cn/large/006tNc79gy1fz1luhci5uj30cm03aq3a.jpg)
 
 
 
@@ -62,21 +62,21 @@ WTable是58架构平台部研发的kv、klist分布式存储系统，数据会�
   
   常见接口操作的示例：
   
-  ![](/Users/zujiahuan/Desktop/屏幕快照 2019-01-10 下午3.49.35.png)
+  ![](https://ws3.sinaimg.cn/large/006tNc79gy1fz1lv4jjgxj30x002maai.jpg)
   
-  ![](/Users/zujiahuan/Desktop/屏幕快照 2019-01-10 下午3.56.06.png)
+  ![](https://ws2.sinaimg.cn/large/006tNc79gy1fz1lwa2xcbj30wg02oq3f.jpg)
   
-  ![](/Users/zujiahuan/Desktop/屏幕快照 2019-01-10 下午3.57.04.png)
+  ![](https://ws3.sinaimg.cn/large/006tNc79gy1fz1lwsoy89j30wg030aah.jpg)
 
-  ![](/Users/zujiahuan/Desktop/屏幕快照 2019-01-10 下午3.58.44.png)
+  ![](https://ws2.sinaimg.cn/large/006tNc79gy1fz1lxumko4j30wc02o0tb.jpg)
 
-  ![](/Users/zujiahuan/Desktop/屏幕快照 2019-01-10 下午3.59.44.png)
+  ![](https://ws4.sinaimg.cn/large/006tNc79gy1fz1lya0qepj30we04oab1.jpg)
   
-  ![](/Users/zujiahuan/Desktop/屏幕快照 2019-01-10 下午4.03.17.png)
+  ![](https://ws4.sinaimg.cn/large/006tNc79gy1fz1lynzxb7j30wy07uq5f.jpg)
 
-  ![](/Users/zujiahuan/Desktop/屏幕快照 2019-01-10 下午4.04.26.png)
+  ![](https://ws1.sinaimg.cn/large/006tNc79gy1fz1lz05s1jj30wc0323z1.jpg)
   
-  ![](/Users/zujiahuan/Desktop/屏幕快照 2019-01-10 下午4.04.52.png)
+  ![](https://ws2.sinaimg.cn/large/006tNc79gy1fz1lzmt2paj30w2034aai.jpg)
   
 **get/zGet：**在默认空间/Z空间中获取某个table中rowKey+colKey对应的数据，可以指定是否使用cas，关于cas的概念和详情参加下文中cas的部分。
 
@@ -116,7 +116,9 @@ WTable是58架构平台部研发的kv、klist分布式存储系统，数据会�
   2） UserInfo.Java
   
   
-  ![](/Users/zujiahuan/Desktop/屏幕快照 2019-01-10 下午4.30.57.png)
+  静态内部类User
+  
+  ![](https://ws4.sinaimg.cn/large/006tNc79gy1fz1m0bx398j30io0l6djf.jpg)
 
 
 
